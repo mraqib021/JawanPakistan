@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+:root {
+  --color-1: #3383b1;
+  --color-2: #41b3f5;
+  --color-3: #88cdf5;
+}
+table {
+  width: 100%;
+  text-align: center;
+}
+caption {
+  font-size: 24px;
+  background-color: #88cdf5;
+  color: #3383b1;
+}
+thead th {
+  padding: 10px;
+  background-color: var(--color-1);
+  color: #fff;
+}
+tbody tr {
+  background-color: var(--color-2);
+}
+tbody td {
+  padding: 10px;
+}
+tbody tr:nth-child(odd) {
+  background-color: var(--color-3);
+}
+@media screen and (min-width: 90px) {
+  thead th {
+    padding: 4px;
+  }
+  tbody td {
+    padding: 5px;
+  }
+}
